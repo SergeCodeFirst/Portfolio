@@ -1,0 +1,71 @@
+/* ---------------------
+Fonts  
+------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ---------------------
+Variables  
+------------------------*/
+
+:root {
+  /* background-color: black; */
+  --main-color: #e02f6b;
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
+  --pink-light: #efa2b4;
+  --cyan-light: #aef1ee;
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.40);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(5px);
+}
+
+
+
+.App{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--blue-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-tap-highligh-color: transparent;
+  padding: 5vh 15px;
+}
+.App::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--green-yellow);
+  z-index: -1;
+  opacity: 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2{
+  font-weight: 600;
+}
+
+h3,h4,h5,h6{
+  font-weight: 500;
+}
+
+.main{
+  /* background-color: red; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+
