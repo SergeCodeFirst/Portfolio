@@ -19,7 +19,7 @@ const About = (props) => {
                         </div>
                     </div>
                     <div className="about-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid asperiores aspernatur fuga facere et ex sapiente provident vero, non voluptate consequuntur ullam ea ipsa optio? Quibusdam fugiat odit vel a iste velit ipsa impedit quasi harum! Neque provident veritatis sed voluptatibus sequi atque! Rem necessitatibus alias officia deleniti repellendus temporibus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur r adipisicing elit. Aliquid asperiores aspernatur fuga facere et ex sapiente provident vero, non voluptate consequuntur ullam ea ipsa optio? Quibusdam fugiat odit vel a iste velit ipsa impedit quasi harum! Neque provident veritatis sed voluptatibus sequi atque! Rem necessitatibus alias officia deleniti repellendus temporibus!</p>
                         <h3>Skills</h3>
                         <div className="skills">
                             <div className="skill-item">Html</div>
