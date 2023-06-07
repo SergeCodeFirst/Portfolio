@@ -1,7 +1,21 @@
-import '../GeneralStyle/GeneralStyle.css'
-import '../About/About.css'
+import '../GeneralStyle/GeneralStyle.css';
+import '../About/About.css';
+import Button from '../../components/Button/Button'
 
 const About = (props) => {
+    const activeToggleHandler = (event) => {
+        const tabsContainer = document.querySelector(".about-tabs");
+        const aboutSection = document.querySelector(".about-section");
+
+        if(event.target.classList.contains("tab-item") && !event.target.classList.contains("active")){
+            tabsContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active");
+    
+            const target = event.target.getAttribute("data-target");
+            aboutSection.querySelector(".tab-content.active").classList.remove("active");
+            aboutSection.querySelector(target).classList.add("active");
+        }
+    }
     return <div>
 
         {/* About Section Start */}
@@ -33,6 +47,68 @@ const About = (props) => {
                             <div className="skill-item">C</div>
                             <div className="skill-item">C++</div>
                         </div>
+
+                        <div className="about-tabs" >
+                            <button type="button" className="tab-item button active" data-target="#education" onClick={activeToggleHandler}>Education</button>
+                            <button type="button" className="tab-item button" data-target="#experience" onClick={activeToggleHandler}>Experience</button>
+                        </div>
+
+                        {/* Education start */}
+                        <div className="tab-content active" id="education">
+                            <div className="timeline">
+                                <div className="timeline-item">
+                                    <span className="date">2013 - 2016</span>
+                                    <h4>Bachelor of technology - <span>Todfod University</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime architecto saepe quam aliquid voluptates exercitationem.</p>
+                                </div>
+                                
+                                <div className="timeline-item">
+                                    <span className="date">2013 - 2016</span>
+                                    <h4>Bachelor of technology - <span>Todfod University</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime architecto saepe quam aliquid voluptates exercitationem.</p>
+                                </div>
+                                
+                                <div className="timeline-item">
+                                    <span className="date">2013 - 2016</span>
+                                    <h4>Bachelor of technology - <span>Todfod University</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime architecto saepe quam aliquid voluptates exercitationem.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Education end */}
+
+                        {/* Experience Start  */}
+                        <div className="tab-content" id="experience">
+                            <div className="timeline">
+                                <div className="timeline-item">
+                                    <span className="date"> 2013 - 2014</span>
+                                    <h4>Web Developper - <span>The webshala</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatibus quo veniam excepturi delectus doloremque.</p>
+                                </div>
+
+                                <div className="timeline-item">
+                                    <span className="date"> 2013 - 2014</span>
+                                    <h4>Web Developper - <span>The webshala</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatibus quo veniam excepturi delectus doloremque.</p>
+                                </div>
+
+                                <div className="timeline-item">
+                                    <span className="date"> 2013 - 2014</span>
+                                    <h4>Web Developper - <span>The webshala</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatibus quo veniam excepturi delectus doloremque.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Experience End  */}
+
+                        {/* Button Start */}
+                        <div className='buttons'>
+                            <Button text='Download Cv' path="/"/>
+                            <Button text='Contact Me' path="#"/>
+                        </div>
+                        {/* Button End */}
                     </div>
                 </div>
             </div>
