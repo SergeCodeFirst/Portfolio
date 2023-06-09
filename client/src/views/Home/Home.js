@@ -10,7 +10,7 @@ const Home = (props) => {
                 <div className="row align-item-center">
                     <div className="home-text">
                         <p>Hello, I'm</p>
-                        <h1>John doe</h1>
+                        <h1>John doe.</h1>
                         <h2>frontend Web developer</h2>
                         <div className='buttons'>
                             <Button text='More About Me' path="/about"/>
