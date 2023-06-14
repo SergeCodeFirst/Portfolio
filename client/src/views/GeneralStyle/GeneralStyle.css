@@ -24,7 +24,6 @@ Variables
     --backdrop-filter-blur: blur(5px);
 }
 
-
 /* ---------------------
 Global Settings 
 ------------------------*/
@@ -42,9 +41,14 @@ Global Settings
     box-sizing: border-box;
 }
 
-image {
+
+.image {
     max-width: 100%;
     vertical-align: middle;
+}
+
+ul{
+    list-style: none;
 }
 
 section {
@@ -62,12 +66,18 @@ section {
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: space-around; */
 }
 
 .align-item-center {
     align-items: center;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.hidden{
+    display: none !important;
 }
 
 /* Custom Scroll bar */

@@ -1,13 +1,17 @@
 import './App.css';
 import './views/GeneralStyle/GeneralStyle.css'
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Home from './views/Home/Home';
 import About from './views/About/About';
+import Project from './views/Project/Project';
+import Popup from './components/Popup/Popup';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className= "App">
       <BrowserRouter>
       <Switch>
         <Route exact path='/'>
@@ -20,6 +24,14 @@ function App() {
           <div className='main'>
             <About />
           </div>
+        </Route>
+
+        <Route exact path='/portfolio'>
+          <div className='main'>
+            <Project />
+          </div>
+          {/* Popup Component */}
+          <Popup />
         </Route>
       </Switch>
       </BrowserRouter>
