@@ -1,6 +1,8 @@
 import '../GeneralStyle/GeneralStyle.css';
 import '../About/About.css';
-import Button from '../../components/Button/Button'
+
+
+import Button from '../../components/Button/Button';
 
 const About = (props) => {
     const activeToggleHandler = (event) => {

@@ -14,7 +14,7 @@ const Home = (props) => {
                         <h2>frontend Web developer</h2>
                         <div className='buttons'>
                             <Button text='More About Me' path="/about"/>
-                            <Button text='Portfolio' path="#"/>
+                            <Button text='Portfolio' path="/portfolio"/>
                         </div>
                     </div>
                     <div className="home-img">
