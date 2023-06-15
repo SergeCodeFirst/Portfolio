@@ -7,7 +7,7 @@ import Home from './views/Home/Home';
 import About from './views/About/About';
 import Project from './views/Project/Project';
 
-import Contact from './views/Contact/contact';
+import Contact from './views/Contact/Contact';
 
 import Popup from './components/Popup/Popup';
 
