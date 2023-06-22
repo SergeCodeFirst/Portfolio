@@ -2,7 +2,6 @@
 Global Settings 
 ------------------------*/
 
-
 /* BUTUONS */
 
 .buttons{
@@ -16,6 +15,7 @@ Home Section
 .home-section {
     display: flex;
     padding: 120px 0;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 

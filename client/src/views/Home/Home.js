@@ -1,16 +1,17 @@
+import '../GeneralStyle/GeneralStyle.css'
 import '../Home/Home.css'
-// import { Link } from 'react-router-dom';
+
 import Button from '../../components/Button/Button';
 
 const Home = (props) => {
     return <div>
         {/* <!-- Home Section start --> */}
-        <section className="home-section align-item-center">
+        <section className={props.sectionOn? "home-section align-item-center active" : "home-section align-item-center fade-out "}>
             <div className="container">
                 <div className="row align-item-center">
                     <div className="home-text">
                         <p>Hello, I'm</p>
-                        <h1>John doe.</h1>
+                        <h1>John doe</h1>
                         <h2>frontend Web developer</h2>
                         <div className='buttons'>
                             <Button text='More About Me' path="/about"/>

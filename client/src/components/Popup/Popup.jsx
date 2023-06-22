@@ -3,14 +3,13 @@ import '../Popup/Popup.css'
 
 const Popup = (props) => {
     const closePopup = () => {
-        document.querySelector(".portfolio-popup").classList.toggle("open");
-        document.querySelector(".main").classList.toggle("fade-out");
+        props.togglepopUp();
     }
 
     return <div>
         {/* Portfolio Items Details Popup Start  */}
-        <div className="portfolio-popup">
-            <div className="pp-inner ">
+        <div className={props.popUpOn? "portfolio-popup open": "portfolio-popup"}>
+            <div className="pp-inner"> {/* <div className="pp-inner" onClick={closePopup}>*/}
                 <div className="pp-content">
                     <div className="pp-header">
                         <button type="button" className="btn pp-close" onClick={closePopup}><i className="fas fa-times"></i></button>

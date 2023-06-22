@@ -8,11 +8,9 @@ const Project = (props) => {
     }
 
     const togglePortfolioPopup = (event) => {
-        // console.log(event.target.parentElement);
-        document.querySelector(".portfolio-popup").classList.toggle("open");
-        document.querySelector(".portfolio-popup").scrollTo(0,0);
+        props.togglepopUp();
+        // document.querySelector(".portfolio-popup").scrollTo(0,0);
         portfolioItemDetails(event.target.parentElement)
-        document.querySelector(".main").classList.toggle("fade-out");
     }
 
     const portfolioItemDetails = (portfolioItem) => {
@@ -27,7 +25,7 @@ const Project = (props) => {
 
     return <div>
         {/* Portfolio Section Start */}
-        <section className="portfolio-section sec-padding">
+        <section className={props.sectionOn ? "portfolio-section sec-padding active": "portfolio-section sec-padding fade-out"}>
             <div className="container">
                 <div className="row">
                     <div className="section-title">

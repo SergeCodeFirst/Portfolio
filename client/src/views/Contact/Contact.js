@@ -4,7 +4,7 @@ import '../Contact/Contact.css'
 
 const Contact = (props) => {
     return <div>
-        <section className="contact-section sec-padding">
+        <section className={props.sectionOn ? "contact-section sec-padding active":  "contact-section sec-padding fade-out"}>
             <div className="container">
                 <div className="row">
                     <div className="section-title">
@@ -52,12 +52,12 @@ const Contact = (props) => {
                         <div className="contact-info-item">
                             <h3>Socials</h3>
                             <div className="social-links">
-                                <a href="/contact" target="_blank"><i className="fab fa-facebook-f"></i></a>
                                 <a href="/contact" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a href="/contact" target="_blank"><i className="fab fa-github"></i></a>
                                 <a href="/contact" target="_blank"><i className="fab fa-instagram"></i></a>
                                 <a href="/contact" target="_blank"><i className="fab fa-youtube"></i></a>
                                 <a href="/contact" target="_blank"><i className="fab fa-tiktok"></i></a>
-                                <a href="/contact" target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="/contact" target="_blank"><i className="fab fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>

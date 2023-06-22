@@ -21,7 +21,7 @@ const About = (props) => {
     return <div>
 
         {/* About Section Start */}
-        <section className='about-section sec-padding'>
+        <section className={props.sectionOn?'about-section sec-padding active': 'about-section sec-padding fade-out'}>
             <div className='container'>
                 <div className='row'>
                     <div className='section-title'>
@@ -107,8 +107,8 @@ const About = (props) => {
 
                         {/* Button Start */}
                         <div className='buttons'>
-                            <Button text='Download Cv' path="/"/>
-                            <Button text='Contact Me' path="#"/>
+                            <Button text='Download Cv' path="resume.pdf" target="_blank"/>
+                            <Button text='Contact Me' path="/contact"/>
                         </div>
                         {/* Button End */}
                     </div>

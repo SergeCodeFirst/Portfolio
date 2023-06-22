@@ -36,7 +36,7 @@ Variables
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-tap-highligh-color: transparent;
-  padding: 5vh 15px;
+  padding: 35px 15px;
 }
 
 .hide-scrolling{
@@ -71,6 +71,7 @@ h3,h4,h5,h6{
   max-width: 1200px;
   margin: auto;
   transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
 .main.fade-out{
