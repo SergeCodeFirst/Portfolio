@@ -57,6 +57,7 @@ section {
     min-height:  calc(100vh - 70px);
     border-radius: 30px;
     transition: all 0.5s ease-in-out;
+    backdrop-filter: var(--backdrop-filter-blur);
 }
 
 section.active{
