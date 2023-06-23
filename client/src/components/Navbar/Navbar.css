@@ -153,3 +153,34 @@
 .header .nav-inner ul li a:hover{
     color: var(--main-color);
 }
+
+
+
+/* Responsive */
+
+@media(max-width:991px){
+    /* General changed */
+    /* Home changed */
+    /* Project changed */
+}
+
+@media(max-width:767px){
+    /* About changed */
+    /* Project changed */
+    /* Project changed : Popup */
+    /* Contact changed */
+}
+
+@media(max-width:575px){
+    .header .nav-inner ul li a{
+        font-size: 35px;
+    }
+    .home-text h1{
+        font-size: 30px;
+    }
+    .home-text h2{
+        font-size: 18px;
+    }
+    /* About changed */
+    /* Project changed : Popup */
+}

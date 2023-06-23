@@ -31,3 +31,28 @@ Project Section
 .portfolio-item-details{
     display: none;
 }
+
+/* Responsive */
+
+@media(max-width:991px){
+    /* General changed */
+    /* Home changed */
+    .portfolio-item{
+        width: calc(50% - 30px);
+    }
+}
+
+@media(max-width:767px){
+    /* About changed */
+    .portfolio-item{
+        width: calc(100% - 30px);
+    }
+    /* Project changed : Popup */
+    /* Contact changed */
+}
+
+@media(max-width:575px){
+    /* Navbar changed */
+    /* About changed */
+    /* Project changed : Popup */
+}

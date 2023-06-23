@@ -74,3 +74,35 @@
     color: var(--white) ;
     background-color: var(--main-color);
 }
+
+
+/* Responsive */
+
+@media(max-width:991px){
+    /* General changed */
+    /* Home changed */
+    /* Project changed */
+}
+
+@media(max-width:767px){
+    /* About changed */
+    /* Project changed */
+    /* Project changed : Popup */
+    .contact-form,
+    .contact-info{
+        width: 100%;
+    }
+    .contact-info{
+        order: -1;
+        margin-bottom: 15px;
+    }
+    .contact-info-item{
+        padding: 0;
+    }
+}
+
+@media(max-width:575px){
+    /* Navbar changed */
+    /* About changed */
+    /* Project changed : Popup */
+}
