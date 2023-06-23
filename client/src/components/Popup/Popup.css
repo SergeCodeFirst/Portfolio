@@ -90,3 +90,31 @@
     text-transform: lowercase;
     color: var(--main-color);
 }
+
+
+
+/* Responsive */
+
+@media(max-width:991px){
+    /* General changed */
+    /* Home changed */
+    /* Project changed */
+}
+
+@media(max-width:767px){
+    /* About changed */
+    /* Project changed */
+    /* Project changed : Popup */
+    .pp-inner{
+        padding: 30px 15px;
+    }
+    /* Contact changed */
+}
+
+@media(max-width:575px){
+    /* Navbar changed */
+    /* About changed */
+    .pp-inner h3{
+        font-size: 20px;
+    }
+}

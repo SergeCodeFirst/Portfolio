@@ -126,3 +126,37 @@ section.fade-out{
 ::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
+
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:991px){
+    .container{
+        padding: 0;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* Home changed */
+    /* Project changed */
+}
+
+@media(max-width:767px){
+    /* About changed */
+    /* Project changed */
+    /* Project changed : Popup */
+    /* Contact changed */
+}
+
+@media(max-width:575px){
+    /* Navbar changed */
+    /* About changed */
+    /* Project changed : Popup */
+}
