@@ -41,6 +41,7 @@ function App() {
 
   return (
     <div className= "App">
+
       {/* Page Loader Start */}
       <div className={pageLoaderOn? "page-loader": "page-loader fade-out disappear"}>
         <div></div>
@@ -50,13 +51,16 @@ function App() {
       {/* Page Loader End */}
 
       {/* Background Circles Start*/}
+
       <div className="bg-circles">
         <div className="circle-1"></div>
         <div className="circle-2"></div>
         <div className="circle-3"></div>
         <div className="circle-4"></div>
       </div>
+
       {/* Background Circles End */}
+
       <BrowserRouter>
       <Switch>
         <Route exact path='/'>

@@ -97,6 +97,7 @@ h3,h4,h5,h6{
   }
 }
 
+
 @keyframes spin {
   0%{
       transform: rotate(0deg);
@@ -168,6 +169,7 @@ h3,h4,h5,h6{
 
 
 /* BACKGROUND CIRCLES */
+
 .bg-circles{
   position: fixed;
   top: 0;
