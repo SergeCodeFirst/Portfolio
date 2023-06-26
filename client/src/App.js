@@ -10,11 +10,26 @@ import Contact from './views/Contact/Contact';
 
 import Popup from './components/Popup/Popup';
 import NavBar from './components/Navbar/Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const [sectionOn, setSectionOn] = useState(true);
+  const [mainOn, setMainOn] = useState(false);
+  const [pageLoaderOn, setPageLoaderOn] = useState(true);
+  const [sectionOn, setSectionOn] = useState(false);
   const [popUpOn, setpopUpOn] = useState(false);
+
+  useEffect(() => {
+    runAnimation();
+  }, [])
+
+  const runAnimation = () => {
+    setMainOn(true);
+    setSectionOn(true);
+
+    setTimeout(() => {
+      setPageLoaderOn(false)
+    }, 400)
+  }
 
   const toggleSection = () => {
     setSectionOn(!sectionOn);
@@ -23,25 +38,40 @@ function App() {
   const togglepopUp = () => {
     setpopUpOn(!popUpOn);
   }
+
   return (
     <div className= "App">
+
+      {/* Page Loader Start */}
+      <div className={pageLoaderOn? "page-loader": "page-loader fade-out disappear"}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {/* Page Loader End */}
+
+      {/* Background Circles Start*/}
+
       <div className="bg-circles">
         <div className="circle-1"></div>
         <div className="circle-2"></div>
         <div className="circle-3"></div>
         <div className="circle-4"></div>
       </div>
+
+      {/* Background Circles End */}
+
       <BrowserRouter>
       <Switch>
         <Route exact path='/'>
-          <div className='main'>
+          <div className={mainOn? "main" : "main hidden"}>
             <Home sectionOn = {sectionOn} />
             <NavBar toggleSection = {toggleSection} />
           </div>
         </Route>
 
         <Route exact path='/about'>
-          <div className='main'>
+          <div className={mainOn? "main" : "main hidden"}>
             <About sectionOn = {sectionOn} />
             <NavBar toggleSection = {toggleSection} />
           </div>
@@ -58,7 +88,7 @@ function App() {
 
 
         <Route exact path='/contact'>
-          <div className='main'>
+          <div className={mainOn? "main" : "main hidden"}>
             <Contact sectionOn = {sectionOn} />
             <NavBar toggleSection = {toggleSection} />
           </div>
