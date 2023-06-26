@@ -28,7 +28,7 @@ function App() {
 
     setTimeout(() => {
       setPageLoaderOn(false)
-    }, 400)
+    }, 700)
   }
 
   const toggleSection = () => {
